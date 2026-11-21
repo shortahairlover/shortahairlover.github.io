@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Illustrated portrait of a netrunner with short messy hair, rectangular glasses, a temple implant and a neck cable">
+  <defs>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#0A0A0D"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#F3E600" stroke-width="1.4" opacity="0.55"/>
+    </pattern>
+    <pattern id="hatchDense" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+      <rect width="4" height="4" fill="#0A0A0D"/>
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#F3E600" stroke-width="1.6" opacity="0.8"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#3DF2E8" opacity="0.10"/>
+    </pattern>
+    <clipPath id="faceClip">
+      <path d="M150,168 C150,118 250,118 250,168 L253,238 C253,290 226,326 200,331 C174,326 147,290 147,238 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- jacket / shoulders -->
+  <path d="M52,500 C60,430 112,392 168,378 L232,378 C288,392 340,430 348,500 Z" fill="url(#hatch)" stroke="#F3E600" stroke-width="2.5"/>
+  <path d="M168,378 L186,430 L200,404 L214,430 L232,378" fill="none" stroke="#F3E600" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M110,412 L128,500 M290,412 L272,500" stroke="#F3E600" stroke-width="1.5" opacity="0.6"/>
+  <!-- shoulder plate -->
+  <path d="M262,402 L318,428 L330,470 L300,462 L280,430 Z" fill="#0A0A0D" stroke="#FF2E4D" stroke-width="2"/>
+  <path d="M290,440 L312,448" stroke="#FF2E4D" stroke-width="2"/>
+
+  <!-- neck -->
+  <path d="M178,318 L178,380 L222,380 L222,318" fill="url(#hatchDense)" stroke="#F3E600" stroke-width="2.5"/>
+  <!-- neck port + cable -->
+  <rect x="204" y="346" width="14" height="10" fill="#0A0A0D" stroke="#3DF2E8" stroke-width="2"/>
+  <path d="M218,351 C250,352 262,380 268,410 C274,440 300,470 340,500" fill="none" stroke="#3DF2E8" stroke-width="3"/>
+  <path d="M218,351 C250,352 262,380 268,410 C274,440 300,470 340,500" fill="none" stroke="#0A0A0D" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <!-- ears -->
+  <path d="M148,212 C136,210 134,246 150,252" fill="#0A0A0D" stroke="#F3E600" stroke-width="2.5"/>
+  <path d="M252,212 C264,210 266,246 250,252" fill="#0A0A0D" stroke="#F3E600" stroke-width="2.5"/>
+
+  <!-- face -->
+  <path d="M150,168 C150,118 250,118 250,168 L253,238 C253,290 226,326 200,331 C174,326 147,290 147,238 Z" fill="#0A0A0D" stroke="#F3E600" stroke-width="2.5"/>
+  <g clip-path="url(#faceClip)">
+    <!-- shadow side of the face -->
+    <path d="M214,120 C240,150 246,230 236,280 C228,310 214,326 200,334 L260,334 L260,120 Z" fill="url(#hatch)"/>
+    <rect x="140" y="110" width="120" height="230" fill="url(#scan)"/>
+  </g>
+  <!-- jaw implant plate -->
+  <path d="M232,262 L250,240 L252,268 L236,296 Z" fill="#0A0A0D" stroke="#3DF2E8" stroke-width="2"/>
+  <circle cx="246" cy="262" r="2" fill="#3DF2E8"/>
+  <!-- temple implant traces -->
+  <path d="M250,190 L262,196 L262,232 M256,206 L268,206" fill="none" stroke="#FF2E4D" stroke-width="2"/>
+  <circle cx="268" cy="206" r="2.5" fill="#FF2E4D"/>
+
+  <!-- brows, nose, mouth -->
+  <path d="M162,192 L192,188 M208,188 L238,192" stroke="#F3E600" stroke-width="3" stroke-linecap="square"/>
+  <path d="M200,226 L194,266 L206,268" fill="none" stroke="#F3E600" stroke-width="2"/>
+  <path d="M184,292 C194,296 206,296 216,292" fill="none" stroke="#F3E600" stroke-width="2.5"/>
+
+  <!-- glasses -->
+  <rect x="158" y="200" width="36" height="26" rx="3" fill="#3DF2E8" fill-opacity="0.16" stroke="#F3E600" stroke-width="2.5"/>
+  <rect x="206" y="200" width="36" height="26" rx="3" fill="#3DF2E8" fill-opacity="0.16" stroke="#F3E600" stroke-width="2.5"/>
+  <path d="M194,210 C198,206 202,206 206,210 M158,208 L148,206 M242,208 L252,206" fill="none" stroke="#F3E600" stroke-width="2.5"/>
+  <path d="M164,220 L178,204 M212,220 L226,204" stroke="#FF2E4D" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- short messy hair -->
+  <path d="M140,196 C128,150 140,104 178,92 C192,80 214,80 230,90 C262,98 276,140 262,196
+           C258,176 254,160 246,150 L240,164 L232,146 L220,160 L214,140 L202,158 L194,138 L184,158
+           L174,142 L166,162 L158,150 C150,162 144,178 140,196 Z" fill="url(#hatchDense)" stroke="#F3E600" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M170,96 L160,78 L184,90 M206,84 L212,66 L222,88 M240,96 L258,84 L250,106" fill="none" stroke="#F3E600" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
